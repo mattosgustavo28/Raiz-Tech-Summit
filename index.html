@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raiz Tech Summit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌱 Raiz Tech Summit</h1>
+  </header>
+
+  <section class="hero">
+    <p class="slogan">Tecnologia com raiz no Rio Grande do Sul.</p>
+    <a href="#inscricao" class="btn">Saiba Mais</a>
+  </section>
+
+  <section id="inscricao" class="form-section">
+    <h2>Inscreva-se</h2>
+    <p>Preencha seus dados abaixo. O CEP preenche cidade e estado automaticamente.</p>
+
+    <form id="formInscricao">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" required>
+
+      <label for="cep">CEP</label>
+      <input type="text" id="cep" placeholder="00000-000" maxlength="9">
+      <p id="cepStatus"></p>
+
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade" readonly>
+
+      <label for="estado">Estado</label>
+      <input type="text" id="estado" readonly>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" rows="3"></textarea>
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+
+    <div id="agradecimento" hidden>
+      <p>Obrigado, <span id="nomeConfirmado"></span>! Sua inscrição foi recebida.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Raiz Tech Summit — evento fictício de estudo.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
